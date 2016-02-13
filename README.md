@@ -1,2 +1,3 @@
-# togglz-samples
-Some Togglz sample applications
+# Togglz Samples
+
+Some Togglz sample applications.

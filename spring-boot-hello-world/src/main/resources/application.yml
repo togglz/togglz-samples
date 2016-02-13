@@ -1,0 +1,10 @@
+logging:
+  level:
+    org.togglz: DEBUG
+togglz:
+  feature-enums: sample.MyFeatures
+  features:
+    HELLO_WORLD: true
+    REVERSE_GREETING: false
+  console:
+    secured: false
