@@ -1,0 +1,11 @@
+logging:
+  level:
+    org.togglz: DEBUG
+togglz:
+  console:
+    feature-admin-authority: ROLE_ADMIN
+  feature-manager-name: My Feature Manager
+  features-file: classpath:/features.properties
+  cache:
+    enable: true
+    time-to-live: 10000
