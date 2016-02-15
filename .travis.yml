@@ -3,5 +3,3 @@ sudo: false
 jdk:
   - oraclejdk7
   - oraclejdk8
-notifications:
-  slack: togglz:HUoTsKGDzDcg2rInKEpzqaBH
