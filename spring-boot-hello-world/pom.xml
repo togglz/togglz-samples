@@ -9,7 +9,6 @@
   </parent>
 
   <artifactId>togglz-sample-spring-boot-hello-world</artifactId>
-  <packaging>war</packaging>
 
   <name>Togglz Sample Spring Boot Hello World</name>
   <description>Togglz Sample Spring Boot Hello World</description>

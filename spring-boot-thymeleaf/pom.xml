@@ -9,7 +9,6 @@
   </parent>
 
   <artifactId>togglz-sample-spring-boot-thymeleaf</artifactId>
-  <packaging>war</packaging>
 
   <name>Togglz Sample Spring Boot Thymeleaf</name>
   <description>Togglz Sample Spring Boot Thymeleaf</description>

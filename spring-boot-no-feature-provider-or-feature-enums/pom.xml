@@ -9,7 +9,6 @@
   </parent>
 
   <artifactId>togglz-sample-spring-boot-no-feature-provider-or-feature-enums</artifactId>
-  <packaging>war</packaging>
 
   <name>Togglz Sample Spring Boot No Feature Provider Or Feature Enums</name>
   <description>Togglz Sample Spring No Feature Provider Or Feature Enums</description>
