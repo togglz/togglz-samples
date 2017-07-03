@@ -15,7 +15,8 @@ import org.togglz.core.spi.FeatureProvider;
 @SpringBootApplication
 public class Application {
 
-    @Bean
+    @SuppressWarnings("unchecked")
+	@Bean
     public FeatureProvider featureProvider() {
         return new EnumBasedFeatureProvider(MyFeatures.class);
     }

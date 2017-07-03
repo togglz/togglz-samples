@@ -19,7 +19,7 @@ public class HelloWorldController {
     }
 
     @RequestMapping("/")
-    public ResponseEntity index() {
+    public ResponseEntity<?> index() {
         if (featureManager.isActive(MyFeatures.HELLO_WORLD)) {
             StringBuilder sb = new StringBuilder(GREETING);
             if (featureManager.isActive(MyFeatures.REVERSE_GREETING)) {
