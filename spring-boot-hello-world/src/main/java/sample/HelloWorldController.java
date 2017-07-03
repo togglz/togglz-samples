@@ -10,7 +10,7 @@ public class HelloWorldController {
     private static final String GREETING = "Greetings from Spring Boot!";
 
     @RequestMapping("/")
-    public ResponseEntity index() {
+    public ResponseEntity<?> index() {
         if (MyFeatures.HELLO_WORLD.isActive()) {
             StringBuilder sb = new StringBuilder(GREETING);
             if (MyFeatures.REVERSE_GREETING.isActive()) {

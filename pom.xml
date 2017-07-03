@@ -38,12 +38,13 @@
 
   <properties>
 	<java.version>1.7</java.version>
-    <togglz.version>2.3.0-SNAPSHOT</togglz.version>
-    <spring-boot.version>1.3.2.RELEASE</spring-boot.version>
+    <togglz.version>2.5.0-SNAPSHOT</togglz.version>
+    <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
   </properties>
 
   <modules>
     <module>spring-boot-hello-world</module>
+    <module>spring-boot-no-feature-provider-or-feature-enums</module>
     <module>spring-boot-security</module>
     <module>spring-boot-thymeleaf</module>
   </modules>
@@ -103,7 +104,16 @@
         <version>${togglz.version}</version>
       </dependency>
 
+      <dependency>
+        <!-- Import dependency management from Spring Boot -->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
+
   </dependencyManagement>
 
   <build>
@@ -120,6 +130,23 @@
           <configuration>
             <source>${java.version}</source>
             <target>${java.version}</target>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <configuration>
+            <includes>
+              <include>**/*Tests.java</include>
+            </includes>
+            <excludes>
+              <exclude>**/Abstract*.java</exclude>
+            </excludes>
+            <systemPropertyVariables>
+              <java.security.egd>file:/dev/./urandom</java.security.egd>
+              <java.awt.headless>true</java.awt.headless>
+            </systemPropertyVariables>
+            <argLine>-Xmx1024m</argLine>
           </configuration>
         </plugin>
       </plugins>
