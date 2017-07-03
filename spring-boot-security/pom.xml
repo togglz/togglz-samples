@@ -9,7 +9,6 @@
   </parent>
 
   <artifactId>togglz-sample-spring-boot-security</artifactId>
-  <packaging>war</packaging>
 
   <name>Togglz Sample Spring Boot Security</name>
   <description>Togglz Sample Spring Boot Security</description>
