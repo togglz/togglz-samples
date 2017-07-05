@@ -10,7 +10,7 @@ public class HelloWorldController {
     private static final String GREETING = "Greetings from Spring Boot!";
 
     @RequestMapping("/")
-    public ResponseEntity index() {
+    public ResponseEntity<?> index() {
         return ResponseEntity.ok().body(GREETING);
     }
 }
