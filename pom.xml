@@ -38,8 +38,8 @@
 
   <properties>
 	<java.version>1.7</java.version>
-    <togglz.version>2.5.0-SNAPSHOT</togglz.version>
-    <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
+    <togglz.version>2.7.0-SNAPSHOT</togglz.version>
+    <spring-boot.version>1.5.22.RELEASE</spring-boot.version>
   </properties>
 
   <modules>
