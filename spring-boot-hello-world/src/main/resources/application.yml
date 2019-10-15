@@ -9,3 +9,6 @@ togglz:
       enabled: false
   console:
     secured: false
+management:
+  security:
+    enabled: false
