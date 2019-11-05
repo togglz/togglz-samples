@@ -9,3 +9,10 @@ togglz:
       enabled: false
   console:
     secured: false
+    use-management-port: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
