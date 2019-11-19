@@ -11,6 +11,8 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.ResultActions;
 import org.togglz.core.repository.FeatureState;
 import org.togglz.core.repository.StateRepository;
 
@@ -42,10 +44,5 @@ public class HelloWorldControllerIntegrationTests {
         state.setFeatureState(new FeatureState(HelloWorldController.REVERSE_GREETING, true));
         mockMvc.perform(get("")).andExpect(status().isOk())
                 .andExpect(content().string("!tooB gnirpS morf sgniteerG"));
-    }
-
-    @Test
-    public void shouldExposeTogglzEndpoint() throws Exception {
-        mockMvc.perform(get("/togglz")).andExpect(status().isOk());
     }
 }
