@@ -39,7 +39,7 @@
   <properties>
     <java.version>14</java.version>
     <togglz.version>2.7.0-SNAPSHOT</togglz.version>
-    <spring-boot.version>2.2.8.RELEASE</spring-boot.version>
+    <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
   </properties>
 
   <modules>
