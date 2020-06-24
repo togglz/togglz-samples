@@ -23,7 +23,7 @@ public class HelloWorldControllerIntegrationTests {
 
     @Test
     public void testHelloWorldFeatureWithAdmin() throws Exception {
-        mockMvc.perform(get("")
+        mockMvc.perform(get("/")
                 .with(user("admin")))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Greetings from Spring Boot!"));
@@ -31,7 +31,7 @@ public class HelloWorldControllerIntegrationTests {
 
     @Test
     public void testHelloWorldFeatureWithUser1() throws Exception {
-        mockMvc.perform(get("")
+        mockMvc.perform(get("/")
                 .with(user("user1")))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Greetings from Spring Boot!"));
@@ -39,7 +39,7 @@ public class HelloWorldControllerIntegrationTests {
 
     @Test
     public void testHelloWorldFeatureWithUser2() throws Exception {
-        mockMvc.perform(get("")
+        mockMvc.perform(get("/")
                 .with(user("user2")))
                 .andExpect(status().isOk())
                 .andExpect(content().string("!tooB gnirpS morf sgniteerG"));
@@ -47,7 +47,7 @@ public class HelloWorldControllerIntegrationTests {
 
     @Test
     public void testHelloWorldFeatureWithUser3() throws Exception {
-        mockMvc.perform(get("")
+        mockMvc.perform(get("/")
                 .with(user("user3")))
                 .andExpect(status().isOk())
                 .andExpect(content().string("!tooB gnirpS morf sgniteerG"));
@@ -55,7 +55,7 @@ public class HelloWorldControllerIntegrationTests {
 
     @Test
     public void testHelloWorldFeatureWithUser4() throws Exception {
-        mockMvc.perform(get("")
+        mockMvc.perform(get("/")
                 .with(user("user4")))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Greetings from Spring Boot!"));

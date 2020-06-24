@@ -22,7 +22,7 @@ public class HelloWorldControllerIntegrationTests {
 
     @Test
     public void testHelloWorld() throws Exception {
-        mockMvc.perform(get(""))
+        mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Greetings from Spring Boot!"));
     }

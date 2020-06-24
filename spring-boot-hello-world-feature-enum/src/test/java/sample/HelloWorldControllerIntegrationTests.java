@@ -30,19 +30,19 @@ public class HelloWorldControllerIntegrationTests {
     @Test
     public void testHelloWorldFeatureDisabled() throws Exception {
         state.setFeatureState(new FeatureState(Features.HELLO_WORLD, false));
-        mockMvc.perform(get("")).andExpect(status().isNotFound());
+        mockMvc.perform(get("/")).andExpect(status().isNotFound());
     }
 
     @Test
     public void testHelloWorldFeatureEnabled() throws Exception {
-        mockMvc.perform(get("")).andExpect(status().isOk())
+        mockMvc.perform(get("/")).andExpect(status().isOk())
                 .andExpect(content().string("Greetings from Spring Boot!"));
     }
 
     @Test
     public void testHelloWorldFeatureAndReverseGreetingEnabled() throws Exception {
         state.setFeatureState(new FeatureState(Features.REVERSE_GREETING, true));
-        mockMvc.perform(get("")).andExpect(status().isOk())
+        mockMvc.perform(get("/")).andExpect(status().isOk())
                 .andExpect(content().string("!tooB gnirpS morf sgniteerG"));
     }
 }
