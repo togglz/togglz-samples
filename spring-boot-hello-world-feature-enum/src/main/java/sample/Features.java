@@ -11,7 +11,7 @@ public enum Features implements Feature {
     @EnabledByDefault
     HELLO_WORLD,
 
-    @Label("another descrition")
+    @Label("another description")
     REVERSE_GREETING;
 
     public boolean isActive() {
