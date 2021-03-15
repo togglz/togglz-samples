@@ -48,6 +48,7 @@
     <module>spring-boot-no-feature-provider-or-feature-enums</module>
     <module>spring-boot-security</module>
     <module>spring-boot-thymeleaf</module>
+    <module>spring-boot-war</module>
   </modules>
 
   <developers>
